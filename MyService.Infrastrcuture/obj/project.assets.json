@@ -2601,6 +2601,15 @@
           }
         }
       },
+      "NCop/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NCop.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NCop.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -6940,6 +6949,18 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NCop/1.0.0": {
+      "sha512": "g34UlCB8fg37Q/W/pZp5/O6X2iYDBnE3QR46KX8ltJj+QQrGaCo2z0kxqKjNrw9K5oFCFVicHLiGjBfTgWqyZA==",
+      "type": "package",
+      "path": "ncop/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NCop.dll",
+        "ncop.1.0.0.nupkg.sha512",
+        "ncop.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -11796,7 +11817,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "NCop >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11849,6 +11871,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "NCop": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -11866,6 +11892,16 @@
       "warningLevel": 1,
       "message": "La dependencia del proyecto Microsoft.AspNetCore.App no contiene un límite inferior inclusivo. Inclúyalo en la versión de la dependencia para garantizar resultados de restauración coherentes.",
       "libraryId": "Microsoft.AspNetCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"NCop 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "NCop",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

@@ -15,34 +15,44 @@ namespace MyService.Application.Services
         {
             repository = _repository ?? throw new ArgumentNullException(nameof(_repository));
         }
-     
-        public IList<PostDto> GetPostList()
+
+        public MyPostService()
         {
 
-            try
-            { 
-                IList<PostDto> postDtosList = new List<PostDto>();
+        }
 
-                var myModelList = repository.GetPosts();
+        public void GetPostList()
+        {
 
-                foreach (var post in myModelList)
-                {
-                    postDtosList.Add(new PostDto()
-                    {
-                        Title = post.Title,
-                        Content = post.Content,
-                        BlogId = post.BlogId,
-                        PostId = post.PostId
-                    });
-                }
+            Console.WriteLine("Entra en el metodo");
 
-                return postDtosList;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                throw;
-            }
+
+            //try
+            //{
+
+            //    Console.WriteLine("Entra en el metodo");
+            //    IList<PostDto> postDtosList = new List<PostDto>();
+
+            //    var myModelList = repository.GetPosts();
+
+            //    foreach (var post in myModelList)
+            //    {
+            //        postDtosList.Add(new PostDto()
+            //        {
+            //            Title = post.Title,
+            //            Content = post.Content,
+            //            BlogId = post.BlogId,
+            //            PostId = post.PostId
+            //        });
+            //    }
+
+            //    return postDtosList;
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    throw;
+            //}
 
 
 

@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "8d19439ef22c432fe18f0eac697c8789fe30c00a"
+    "signature": "a6ade265b430310b656afed62388e922b065f1b8"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "MyService.Infrastructure/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "NCop": "1.0.0"
         },
         "runtime": {
           "MyService.Infrastructure.dll": {}
@@ -35,6 +36,14 @@
       },
       "Microsoft.NETCore.Platforms/2.1.0": {},
       "Microsoft.NETCore.Targets/2.1.0": {},
+      "NCop/1.0.0": {
+        "runtime": {
+          "lib/net45/NCop.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
@@ -89,6 +98,13 @@
       "sha512": "sha512-x188gIZXOwFXkPXyGavEcPGcR6RGvjFOES2QzskN4gERZjWPN34qhRsZVMC0CLJfQLGSButarcgWxPPM4vmg0w==",
       "path": "microsoft.netcore.targets/2.1.0",
       "hashPath": "microsoft.netcore.targets.2.1.0.nupkg.sha512"
+    },
+    "NCop/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g34UlCB8fg37Q/W/pZp5/O6X2iYDBnE3QR46KX8ltJj+QQrGaCo2z0kxqKjNrw9K5oFCFVicHLiGjBfTgWqyZA==",
+      "path": "ncop/1.0.0",
+      "hashPath": "ncop.1.0.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",
