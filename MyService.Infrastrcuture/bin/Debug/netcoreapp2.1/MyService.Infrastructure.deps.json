@@ -1,17 +1,63 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "8d19439ef22c432fe18f0eac697c8789fe30c00a"
+    "signature": "f88026e556e87552cf9d11933195c323956ef27b"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "MyService.Infrastructure/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "SNAP.StructureMap": "1.8.3"
         },
         "runtime": {
           "MyService.Infrastructure.dll": {}
+        }
+      },
+      "Castle.Core/3.1.0": {
+        "runtime": {
+          "lib/net40-client/Castle.Core.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.2245"
+          }
+        }
+      },
+      "CommonServiceLocator/1.0.0": {
+        "runtime": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CommonServiceLocator.StructureMapAdapter.Unofficial/2.6.4.1": {
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0",
+          "NuGet.PackageNPublish": "0.6.0.1",
+          "structuremap": "2.6.4.1"
+        },
+        "runtime": {
+          "lib/Net40/CommonServiceLocator.StructureMapAdapter.Unofficial.dll": {
+            "assemblyVersion": "2.6.4.1",
+            "fileVersion": "2.6.4.1"
+          },
+          "lib/Net40/Microsoft.Practices.ServiceLocation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/Net40/StructureMap.dll": {
+            "assemblyVersion": "2.6.4.0",
+            "fileVersion": "2.6.4.1"
+          }
+        }
+      },
+      "fasterflect/2.1.2": {
+        "runtime": {
+          "lib/net45/Fasterflect.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
         }
       },
       "Microsoft.NETCore.App/2.1.0": {
@@ -39,6 +85,51 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
+      },
+      "NuGet.Build/0.24.0": {
+        "dependencies": {
+          "NuGet.CommandLine": "1.0.11220.26"
+        }
+      },
+      "NuGet.CommandLine/1.0.11220.26": {},
+      "NuGet.PackageNPublish/0.6.0.1": {
+        "dependencies": {
+          "NuGet.Build": "0.24.0"
+        }
+      },
+      "SNAP/1.8.3": {
+        "dependencies": {
+          "Castle.Core": "3.1.0",
+          "CommonServiceLocator": "1.0.0",
+          "fasterflect": "2.1.2"
+        },
+        "runtime": {
+          "lib/net45/Snap.dll": {
+            "assemblyVersion": "1.7.5121.23356",
+            "fileVersion": "1.7.0.0"
+          }
+        }
+      },
+      "SNAP.StructureMap/1.8.3": {
+        "dependencies": {
+          "CommonServiceLocator.StructureMapAdapter.Unofficial": "2.6.4.1",
+          "SNAP": "1.8.3",
+          "structuremap": "2.6.4.1"
+        },
+        "runtime": {
+          "lib/net45/Snap.StructureMap.dll": {
+            "assemblyVersion": "1.7.5121.24049",
+            "fileVersion": "1.7.0.0"
+          }
+        }
+      },
+      "structuremap/2.6.4.1": {
+        "runtime": {
+          "lib/net40/StructureMap.dll": {
+            "assemblyVersion": "2.6.4.0",
+            "fileVersion": "2.6.4.1"
+          }
+        }
       }
     }
   },
@@ -47,6 +138,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Castle.Core/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nCLFsSa6bEzlH8E+vhGNTYu0JI1urfwtsq0FuQdmI2DEZ2VDB9DtCO2Y8sePqZvb5yMEDFGy7M4I7X9HCtVHCg==",
+      "path": "castle.core/3.1.0",
+      "hashPath": "castle.core.3.1.0.nupkg.sha512"
+    },
+    "CommonServiceLocator/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RJjv0yxm+Fk/ak/CVMTGr0ng7g/nudkVYos4eQrIDpth3BdE1j7J2ddRm8FXtOoIZbgDqTU6hKq5zoackwL3HQ==",
+      "path": "commonservicelocator/1.0.0",
+      "hashPath": "commonservicelocator.1.0.0.nupkg.sha512"
+    },
+    "CommonServiceLocator.StructureMapAdapter.Unofficial/2.6.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mnhHs9uPFQTKjfH5tYPPn1/LGNCiDX+agADu4p41CZlsvef8mW3mOwG7XkVUt5jGf2rn/2sO1bh9HdN/y5E3TQ==",
+      "path": "commonservicelocator.structuremapadapter.unofficial/2.6.4.1",
+      "hashPath": "commonservicelocator.structuremapadapter.unofficial.2.6.4.1.nupkg.sha512"
+    },
+    "fasterflect/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aMrgdpou+9IRW3juugRin5ZSBNEcDNsHfD8aFRSMiohkCsnL6vq9SJvxbmRXvl843uodeQFPrhY0g/IZGOTekg==",
+      "path": "fasterflect/2.1.2",
+      "hashPath": "fasterflect.2.1.2.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",
@@ -96,6 +215,48 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "NuGet.Build/0.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KO0ny9K5r4WUeJKcYsLaAf8CJjIjGbBpYu3DKpEe8dpCOEx8tfUH8oYRFv0Q0hbviK7DezMb52LcG++qcAJQBw==",
+      "path": "nuget.build/0.24.0",
+      "hashPath": "nuget.build.0.24.0.nupkg.sha512"
+    },
+    "NuGet.CommandLine/1.0.11220.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CdHaDY256ZkPkolX02H6LkkS/RtjWwgDafJHIXr65ePiFY5u3+4tM0TVUXNim7eIOzihnQhXXNjdu9M/kTMdnA==",
+      "path": "nuget.commandline/1.0.11220.26",
+      "hashPath": "nuget.commandline.1.0.11220.26.nupkg.sha512"
+    },
+    "NuGet.PackageNPublish/0.6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5c8eZDv3pAHiNohjsJUF7jnuCxXtrlJPS77QrsNGgJcQkFiLyepLPcPt0mS+m9OucwUa2zpix1afPZ2bFEuWNQ==",
+      "path": "nuget.packagenpublish/0.6.0.1",
+      "hashPath": "nuget.packagenpublish.0.6.0.1.nupkg.sha512"
+    },
+    "SNAP/1.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DqxhB3ce+5ceZkQYdzVTyUOYCfqprQQ4jaW567FQE5W0PVOkQdRdOXw0NY8OXos9wtra4OtM/V04faogGdCviQ==",
+      "path": "snap/1.8.3",
+      "hashPath": "snap.1.8.3.nupkg.sha512"
+    },
+    "SNAP.StructureMap/1.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LVXkPJZAVf9NvmtIkeprSz0emaZDyxGbTuqVsq7+wHyp5csPAfMIRtjNQY6hq6nBzIgynxDaxdn15PMYvvi0vQ==",
+      "path": "snap.structuremap/1.8.3",
+      "hashPath": "snap.structuremap.1.8.3.nupkg.sha512"
+    },
+    "structuremap/2.6.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pot5rWPLwM6DAxDPC1L1AyO/A64kAIp3EMpjlrELdKIx8odiRtqfWovEtDIQSdWerbWoD1cTt1aj9s0mpiA6bQ==",
+      "path": "structuremap/2.6.4.1",
+      "hashPath": "structuremap.2.6.4.1.nupkg.sha512"
     }
   }
 }

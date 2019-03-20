@@ -8,3 +8,4 @@ C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcore
 C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.AssemblyInfo.cs
 C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.dll
 C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.pdb
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.csprojAssemblyReference.cache

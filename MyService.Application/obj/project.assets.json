@@ -2,6 +2,51 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Castle.Core/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-client/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40-client/Castle.Core.dll": {}
+        }
+      },
+      "CommonServiceLocator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "CommonServiceLocator.StructureMapAdapter.Unofficial/2.6.4.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0",
+          "NuGet.PackageNPublish": "0.6.0.1",
+          "structuremap": "2.6.4.1"
+        },
+        "compile": {
+          "lib/Net40/CommonServiceLocator.StructureMapAdapter.Unofficial.dll": {},
+          "lib/Net40/Microsoft.Practices.ServiceLocation.dll": {},
+          "lib/Net40/StructureMap.dll": {}
+        },
+        "runtime": {
+          "lib/Net40/CommonServiceLocator.StructureMapAdapter.Unofficial.dll": {},
+          "lib/Net40/Microsoft.Practices.ServiceLocation.dll": {},
+          "lib/Net40/StructureMap.dll": {}
+        }
+      },
+      "fasterflect/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Fasterflect.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Fasterflect.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.4": {
         "type": "package",
         "dependencies": {
@@ -2633,6 +2678,21 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "NuGet.Build/0.24.0": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.CommandLine": "(, )"
+        }
+      },
+      "NuGet.CommandLine/1.0.11220.26": {
+        "type": "package"
+      },
+      "NuGet.PackageNPublish/0.6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Build": "0.24.0"
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2859,6 +2919,43 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "SNAP/1.8.3": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "3.1.0",
+          "CommonServiceLocator": "1.0.0",
+          "fasterflect": "2.1.2"
+        },
+        "compile": {
+          "lib/net45/Snap.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Snap.dll": {}
+        }
+      },
+      "SNAP.StructureMap/1.8.3": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator.StructureMapAdapter.Unofficial": "2.6.4.1",
+          "SNAP": "1.8.3",
+          "structuremap": "2.6.4.1"
+        },
+        "compile": {
+          "lib/net45/Snap.StructureMap.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Snap.StructureMap.dll": {}
+        }
+      },
+      "structuremap/2.6.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/StructureMap.dll": {}
+        },
+        "runtime": {
+          "lib/net40/StructureMap.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -4333,7 +4430,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.AspNetCore.App": "(, )"
+          "Microsoft.AspNetCore.App": "(, )",
+          "SNAP.StructureMap": "1.8.3"
         },
         "compile": {
           "bin/placeholder/MyService.Infrastructure.dll": {}
@@ -4345,6 +4443,80 @@
     }
   },
   "libraries": {
+    "Castle.Core/3.1.0": {
+      "sha512": "nCLFsSa6bEzlH8E+vhGNTYu0JI1urfwtsq0FuQdmI2DEZ2VDB9DtCO2Y8sePqZvb5yMEDFGy7M4I7X9HCtVHCg==",
+      "type": "package",
+      "path": "castle.core/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "BreakingChanges.txt",
+        "Changes.txt",
+        "Committers.txt",
+        "License.txt",
+        "castle.core.3.1.0.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net35/Castle.Core.dll",
+        "lib/net35/Castle.Core.xml",
+        "lib/net40-client/Castle.Core.dll",
+        "lib/net40-client/Castle.Core.xml",
+        "lib/sl4/Castle.Core.dll",
+        "lib/sl4/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
+    "CommonServiceLocator/1.0.0": {
+      "sha512": "RJjv0yxm+Fk/ak/CVMTGr0ng7g/nudkVYos4eQrIDpth3BdE1j7J2ddRm8FXtOoIZbgDqTU6hKq5zoackwL3HQ==",
+      "type": "package",
+      "path": "commonservicelocator/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.1.0.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.XML",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.dll",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.pdb",
+        "lib/SL30/Microsoft.Practices.ServiceLocation.XML",
+        "lib/SL30/Microsoft.Practices.ServiceLocation.dll"
+      ]
+    },
+    "CommonServiceLocator.StructureMapAdapter.Unofficial/2.6.4.1": {
+      "sha512": "mnhHs9uPFQTKjfH5tYPPn1/LGNCiDX+agADu4p41CZlsvef8mW3mOwG7XkVUt5jGf2rn/2sO1bh9HdN/y5E3TQ==",
+      "type": "package",
+      "path": "commonservicelocator.structuremapadapter.unofficial/2.6.4.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.structuremapadapter.unofficial.2.6.4.1.nupkg.sha512",
+        "commonservicelocator.structuremapadapter.unofficial.nuspec",
+        "lib/Net40/CommonServiceLocator.StructureMapAdapter.Unofficial.dll",
+        "lib/Net40/Microsoft.Practices.ServiceLocation.dll",
+        "lib/Net40/StructureMap.dll",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "fasterflect/2.1.2": {
+      "sha512": "aMrgdpou+9IRW3juugRin5ZSBNEcDNsHfD8aFRSMiohkCsnL6vq9SJvxbmRXvl843uodeQFPrhY0g/IZGOTekg==",
+      "type": "package",
+      "path": "fasterflect/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fasterflect.2.1.2.nupkg.sha512",
+        "fasterflect.nuspec",
+        "lib/net35/Fasterflect.XML",
+        "lib/net35/Fasterflect.dll",
+        "lib/net40/Fasterflect.XML",
+        "lib/net40/Fasterflect.dll",
+        "lib/net45/Fasterflect.dll",
+        "lib/net45/Fasterflect.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.4": {
       "sha512": "OdBVC2bQWkf9qDd7Mt07ev4SwIdu6VmLBMTWC0D5cOP/HWSXyv/77otwtXVrAo42duNjvXOjzjP5oOI9m1+DTQ==",
       "type": "package",
@@ -7123,6 +7295,44 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
+    "NuGet.Build/0.24.0": {
+      "sha512": "KO0ny9K5r4WUeJKcYsLaAf8CJjIjGbBpYu3DKpEe8dpCOEx8tfUH8oYRFv0Q0hbviK7DezMb52LcG++qcAJQBw==",
+      "type": "package",
+      "path": "nuget.build/0.24.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "nuget.build.0.24.0.nupkg.sha512",
+        "nuget.build.nuspec",
+        "tools/NuGet.targets"
+      ]
+    },
+    "NuGet.CommandLine/1.0.11220.26": {
+      "sha512": "CdHaDY256ZkPkolX02H6LkkS/RtjWwgDafJHIXr65ePiFY5u3+4tM0TVUXNim7eIOzihnQhXXNjdu9M/kTMdnA==",
+      "type": "package",
+      "path": "nuget.commandline/1.0.11220.26",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Tools/NuGet.exe",
+        "nuget.commandline.1.0.11220.26.nupkg.sha512",
+        "nuget.commandline.nuspec"
+      ]
+    },
+    "NuGet.PackageNPublish/0.6.0.1": {
+      "sha512": "5c8eZDv3pAHiNohjsJUF7jnuCxXtrlJPS77QrsNGgJcQkFiLyepLPcPt0mS+m9OucwUa2zpix1afPZ2bFEuWNQ==",
+      "type": "package",
+      "path": "nuget.packagenpublish/0.6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/_MSBuild/NuGetPackageAndPublish.targets",
+        "nuget.packagenpublish.0.6.0.1.nupkg.sha512",
+        "nuget.packagenpublish.nuspec"
+      ]
+    },
     "Remotion.Linq/2.2.0": {
       "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "type": "package",
@@ -7409,6 +7619,47 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SNAP/1.8.3": {
+      "sha512": "DqxhB3ce+5ceZkQYdzVTyUOYCfqprQQ4jaW567FQE5W0PVOkQdRdOXw0NY8OXos9wtra4OtM/V04faogGdCviQ==",
+      "type": "package",
+      "path": "snap/1.8.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Snap.dll",
+        "lib/net45/Snap.dll",
+        "snap.1.8.3.nupkg.sha512",
+        "snap.nuspec"
+      ]
+    },
+    "SNAP.StructureMap/1.8.3": {
+      "sha512": "LVXkPJZAVf9NvmtIkeprSz0emaZDyxGbTuqVsq7+wHyp5csPAfMIRtjNQY6hq6nBzIgynxDaxdn15PMYvvi0vQ==",
+      "type": "package",
+      "path": "snap.structuremap/1.8.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/StructureMapAopSample.cs.pp",
+        "lib/net40/Snap.StructureMap.dll",
+        "lib/net45/Snap.StructureMap.dll",
+        "snap.structuremap.1.8.3.nupkg.sha512",
+        "snap.structuremap.nuspec"
+      ]
+    },
+    "structuremap/2.6.4.1": {
+      "sha512": "pot5rWPLwM6DAxDPC1L1AyO/A64kAIp3EMpjlrELdKIx8odiRtqfWovEtDIQSdWerbWoD1cTt1aj9s0mpiA6bQ==",
+      "type": "package",
+      "path": "structuremap/2.6.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/StructureMap.XML",
+        "lib/net40/StructureMap.dll",
+        "lib/net40/StructureMap.pdb",
+        "structuremap.2.6.4.1.nupkg.sha512",
+        "structuremap.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -11809,7 +12060,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "MyService.Infrastructure >= 1.0.0"
+      "MyService.Infrastructure >= 1.0.0",
+      "SNAP.StructureMap >= 1.8.3"
     ]
   },
   "packageFolders": {
@@ -11862,6 +12114,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "SNAP.StructureMap": {
+            "target": "Package",
+            "version": "[1.8.3, )"
           }
         },
         "imports": [
@@ -11879,6 +12135,86 @@
       "warningLevel": 1,
       "message": "MyService.Infrastructure no proporciona un límite inferior inclusivo para la dependencia Microsoft.AspNetCore.App. Se resolvió una mejor coincidencia aproximada de Microsoft.AspNetCore.App 2.1.0.",
       "libraryId": "Microsoft.AspNetCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1602",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "NuGet.Build 0.24.0 no proporciona un límite inferior inclusivo para la dependencia NuGet.CommandLine. Se resolvió una mejor coincidencia aproximada de NuGet.CommandLine 1.0.11220.26.",
+      "libraryId": "NuGet.CommandLine",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Castle.Core 3.1.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Castle.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"CommonServiceLocator 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "CommonServiceLocator",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"CommonServiceLocator.StructureMapAdapter.Unofficial 2.6.4.1\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "CommonServiceLocator.StructureMapAdapter.Unofficial",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"fasterflect 2.1.2\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "fasterflect",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"SNAP 1.8.3\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "SNAP",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"SNAP.StructureMap 1.8.3\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "SNAP.StructureMap",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"structuremap 2.6.4.1\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "structuremap",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]
