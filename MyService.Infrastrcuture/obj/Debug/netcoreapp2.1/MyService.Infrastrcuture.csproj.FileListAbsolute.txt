@@ -1,0 +1,9 @@
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastrcuture.deps.json
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastrcuture.dll
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastrcuture.csprojAssemblyReference.cache
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastrcuture.csproj.CoreCompileInputs.cache
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastrcuture.AssemblyInfoInputs.cache
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastrcuture.AssemblyInfo.cs
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastrcuture.csproj.CopyComplete

@@ -1,0 +1,12 @@
+C:\Users\acebe\source\repos\MyService\MyService.Application\bin\Debug\netcoreapp2.1\MyService.Application.deps.json
+C:\Users\acebe\source\repos\MyService\MyService.Application\bin\Debug\netcoreapp2.1\MyService.Application.dll
+C:\Users\acebe\source\repos\MyService\MyService.Application\bin\Debug\netcoreapp2.1\MyService.Application.pdb
+C:\Users\acebe\source\repos\MyService\MyService.Application\bin\Debug\netcoreapp2.1\MyService.Infrastructure.dll
+C:\Users\acebe\source\repos\MyService\MyService.Application\bin\Debug\netcoreapp2.1\MyService.Infrastructure.pdb
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.csprojAssemblyReference.cache
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.csproj.CoreCompileInputs.cache
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.AssemblyInfoInputs.cache
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.AssemblyInfo.cs
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.csproj.CopyComplete
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.dll
+C:\Users\acebe\source\repos\MyService\MyService.Application\obj\Debug\netcoreapp2.1\MyService.Application.pdb

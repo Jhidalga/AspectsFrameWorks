@@ -1,0 +1,10 @@
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastructure.deps.json
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastructure.runtimeconfig.json
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastructure.runtimeconfig.dev.json
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastructure.dll
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\bin\Debug\netcoreapp2.1\MyService.Infrastructure.pdb
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.AssemblyInfo.cs
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.dll
+C:\Users\acebe\source\repos\MyService\MyService.Infrastrcuture\obj\Debug\netcoreapp2.1\MyService.Infrastructure.pdb
