@@ -8,8 +8,4 @@
     <ProjectReference Include="..\MyService.Infrastrcuture\MyService.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Aspects\" />
-  </ItemGroup>
-
 </Project>
