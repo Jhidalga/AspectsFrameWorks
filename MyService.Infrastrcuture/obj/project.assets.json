@@ -2601,6 +2601,15 @@
           }
         }
       },
+      "NConcern/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/NConcern.dll": {}
+        },
+        "runtime": {
+          "lib/NConcern.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -6940,6 +6949,19 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NConcern/4.1.0": {
+      "sha512": "oK60P0TxjAMiBal0+Os8dQ6BMWajF++onZNoQyYirLcybOLUzdwgAkv0zGIqbKU7ilyOYyJl6FQq7VDaj7tf/A==",
+      "type": "package",
+      "path": "nconcern/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NConcern.XML",
+        "lib/NConcern.dll",
+        "nconcern.4.1.0.nupkg.sha512",
+        "nconcern.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -11796,7 +11818,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "NConcern >= 4.1.0"
     ]
   },
   "packageFolders": {
@@ -11849,6 +11872,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "NConcern": {
+            "target": "Package",
+            "version": "[4.1.0, )"
           }
         },
         "imports": [
@@ -11866,6 +11893,16 @@
       "warningLevel": 1,
       "message": "La dependencia del proyecto Microsoft.AspNetCore.App no contiene un límite inferior inclusivo. Inclúyalo en la versión de la dependencia para garantizar resultados de restauración coherentes.",
       "libraryId": "Microsoft.AspNetCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"NConcern 4.1.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "NConcern",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

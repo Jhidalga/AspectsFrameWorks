@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="NConcern" Version="4.1.0" />
   </ItemGroup>
 
 </Project>

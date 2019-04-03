@@ -2596,6 +2596,15 @@
           }
         }
       },
+      "NConcern/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/NConcern.dll": {}
+        },
+        "runtime": {
+          "lib/NConcern.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -4333,7 +4342,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.AspNetCore.App": "(, )"
+          "Microsoft.AspNetCore.App": "(, )",
+          "NConcern": "4.1.0"
         },
         "compile": {
           "bin/placeholder/MyService.Infrastructure.dll": {}
@@ -6948,6 +6958,19 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NConcern/4.1.0": {
+      "sha512": "oK60P0TxjAMiBal0+Os8dQ6BMWajF++onZNoQyYirLcybOLUzdwgAkv0zGIqbKU7ilyOYyJl6FQq7VDaj7tf/A==",
+      "type": "package",
+      "path": "nconcern/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NConcern.XML",
+        "lib/NConcern.dll",
+        "nconcern.4.1.0.nupkg.sha512",
+        "nconcern.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -11879,6 +11902,16 @@
       "warningLevel": 1,
       "message": "MyService.Infrastructure no proporciona un límite inferior inclusivo para la dependencia Microsoft.AspNetCore.App. Se resolvió una mejor coincidencia aproximada de Microsoft.AspNetCore.App 2.1.0.",
       "libraryId": "Microsoft.AspNetCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"NConcern 4.1.0\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v2.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "NConcern",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]
