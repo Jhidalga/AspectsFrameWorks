@@ -2,6 +2,60 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "AspectCore.Abstractions/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Abstractions.dll": {}
+        }
+      },
+      "AspectCore.Core/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "AspectCore.Abstractions": "1.2.0",
+          "AspectCore.Extensions.Reflection": "1.2.0",
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Core.dll": {}
+        }
+      },
+      "AspectCore.Extensions.DependencyInjection/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "AspectCore.Core": "1.2.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "AspectCore.Extensions.Reflection/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -3537,7 +3591,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
@@ -4338,6 +4392,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "AspectCore.Core": "1.2.0",
           "MyService.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -4351,6 +4406,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "AspectCore.Core": "1.2.0",
           "Microsoft.AspNetCore.App": "(, )"
         },
         "compile": {
@@ -4363,6 +4419,57 @@
     }
   },
   "libraries": {
+    "AspectCore.Abstractions/1.2.0": {
+      "sha512": "NR8NmRpQvy30+iHOAf0GwGf2FNIQF6U4rzMPv9PiC0p8rp6sknNFDPe2Z2nKJ+lU4WN7R/Io62Okdj7hmcGIyw==",
+      "type": "package",
+      "path": "aspectcore.abstractions/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspectcore.abstractions.1.2.0.nupkg.sha512",
+        "aspectcore.abstractions.nuspec",
+        "lib/net45/AspectCore.Abstractions.dll",
+        "lib/netstandard2.0/AspectCore.Abstractions.dll"
+      ]
+    },
+    "AspectCore.Core/1.2.0": {
+      "sha512": "c7eCvV7lpz803GhO11MbQ3yRFIF52vM0Kh2jDo7zFGdNHUOwtDsfdpfrqmQnyY6yDhdz2fPQLnLw8Aw6Ee1zig==",
+      "type": "package",
+      "path": "aspectcore.core/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspectcore.core.1.2.0.nupkg.sha512",
+        "aspectcore.core.nuspec",
+        "lib/net45/AspectCore.Core.dll",
+        "lib/netstandard2.0/AspectCore.Core.dll"
+      ]
+    },
+    "AspectCore.Extensions.DependencyInjection/1.2.0": {
+      "sha512": "NlciRe3Rfq2F51zkprWf7a7SzWW8880DodZAp7p19Twnnkbt1HP0NfE9Eap44FEms6mfuFvYDa/mEOn5PFHR2w==",
+      "type": "package",
+      "path": "aspectcore.extensions.dependencyinjection/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspectcore.extensions.dependencyinjection.1.2.0.nupkg.sha512",
+        "aspectcore.extensions.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll"
+      ]
+    },
+    "AspectCore.Extensions.Reflection/1.2.0": {
+      "sha512": "+9Ebk4YNMIueiJGhFbrfF8Zr9XY462lRaw6IgYgtfxSopoZSMRlksPnCIxWGoXBijuMeUjRbnULWaTwuZXZLgw==",
+      "type": "package",
+      "path": "aspectcore.extensions.reflection/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspectcore.extensions.reflection.1.2.0.nupkg.sha512",
+        "aspectcore.extensions.reflection.nuspec",
+        "lib/net45/AspectCore.Extensions.Reflection.dll",
+        "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -11824,6 +11931,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "AspectCore.Core >= 1.2.0",
+      "AspectCore.Extensions.DependencyInjection >= 1.2.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -11875,6 +11984,14 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "AspectCore.Core": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
+          "AspectCore.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

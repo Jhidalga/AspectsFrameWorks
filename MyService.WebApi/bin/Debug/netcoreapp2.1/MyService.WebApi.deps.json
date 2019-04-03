@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e071b1a7c9d575b1b3d9ba6c9a1be1d9c6701ca2"
+    "signature": "125a73a87f294b73d56d40eafdc54bd78c045611"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,8 @@
     ".NETCoreApp,Version=v2.1": {
       "MyService.WebApi/1.0.0": {
         "dependencies": {
+          "AspectCore.Core": "1.2.0",
+          "AspectCore.Extensions.DependencyInjection": "1.2.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -34,6 +36,68 @@
         },
         "compile": {
           "MyService.WebApi.dll": {}
+        }
+      },
+      "AspectCore.Abstractions/1.2.0": {
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Abstractions.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Abstractions.dll": {}
+        }
+      },
+      "AspectCore.Core/1.2.0": {
+        "dependencies": {
+          "AspectCore.Abstractions": "1.2.0",
+          "AspectCore.Extensions.Reflection": "1.2.0",
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Core.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Core.dll": {}
+        }
+      },
+      "AspectCore.Extensions.DependencyInjection/1.2.0": {
+        "dependencies": {
+          "AspectCore.Core": "1.2.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "AspectCore.Extensions.Reflection/1.2.0": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -210,6 +274,7 @@
       },
       "MyService.Application/1.0.0": {
         "dependencies": {
+          "AspectCore.Core": "1.2.0",
           "MyService.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -221,6 +286,7 @@
       },
       "MyService.Infrastructure/1.0.0": {
         "dependencies": {
+          "AspectCore.Core": "1.2.0",
           "Microsoft.AspNetCore.App": "2.1.1"
         },
         "runtime": {
@@ -3177,6 +3243,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspectCore.Abstractions/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NR8NmRpQvy30+iHOAf0GwGf2FNIQF6U4rzMPv9PiC0p8rp6sknNFDPe2Z2nKJ+lU4WN7R/Io62Okdj7hmcGIyw==",
+      "path": "aspectcore.abstractions/1.2.0",
+      "hashPath": "aspectcore.abstractions.1.2.0.nupkg.sha512"
+    },
+    "AspectCore.Core/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c7eCvV7lpz803GhO11MbQ3yRFIF52vM0Kh2jDo7zFGdNHUOwtDsfdpfrqmQnyY6yDhdz2fPQLnLw8Aw6Ee1zig==",
+      "path": "aspectcore.core/1.2.0",
+      "hashPath": "aspectcore.core.1.2.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.DependencyInjection/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NlciRe3Rfq2F51zkprWf7a7SzWW8880DodZAp7p19Twnnkbt1HP0NfE9Eap44FEms6mfuFvYDa/mEOn5PFHR2w==",
+      "path": "aspectcore.extensions.dependencyinjection/1.2.0",
+      "hashPath": "aspectcore.extensions.dependencyinjection.1.2.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.Reflection/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+9Ebk4YNMIueiJGhFbrfF8Zr9XY462lRaw6IgYgtfxSopoZSMRlksPnCIxWGoXBijuMeUjRbnULWaTwuZXZLgw==",
+      "path": "aspectcore.extensions.reflection/1.2.0",
+      "hashPath": "aspectcore.extensions.reflection.1.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",

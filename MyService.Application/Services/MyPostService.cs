@@ -11,6 +11,10 @@ namespace MyService.Application.Services
     {
         private readonly IMyRepository repository;
 
+        public MyPostService()
+        {
+        }
+
         public MyPostService(IMyRepository _repository)
         {
             repository = _repository ?? throw new ArgumentNullException(nameof(_repository));
